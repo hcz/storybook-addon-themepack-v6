@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./dist",
+    "outDir": "./dist",
+    "rootDir": "../.."
+  },
+  "paths": {
+    "storybook-themepack": [
+      "../../addons/storybook-themepack/src"
+    ],
+    "storybook-themepack/*": [
+      "../../addons/storybook-themepack/src/*"
+    ]
+  },
+  "references": [
+    {
+      "path": "../../addons/storybook-themepack/"
+    }
+  ],
+  "include": [
+    "src"
+  ]
+}
